@@ -1,0 +1,26 @@
+
+nav{
+    transition: padding 1s;
+}
+
+.topUp{
+    position: fixed;
+    bottom: 4%;
+    right: 4%;
+    z-index: 10;
+    cursor: pointer;
+    background-color: #0aad0a;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+.topUp:hover{
+    bottom: 7%;
+    background-color: #058c05;
+}
+

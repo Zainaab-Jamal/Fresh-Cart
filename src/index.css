@@ -1,0 +1,221 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+
+:root {
+    --main-color: #0aad0a;
+    --light-color: #f0f3f2;
+    --shadow: rgba(145, 158, 171, .2) 0px 2px 4px -1px, rgba(145, 158, 171, .14) 0px 4px 5px 0px, rgba(145, 158, 171, .12) 0px 1px 10px 0px;
+    --font-family: 'Encode Sans Expanded', sans-serif;
+    --rating-color: #ffc908;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0aad0a;
+    box-shadow: 0 0 20px 50px #0aad0a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #019e01;
+    box-shadow: 0 0 20px 50px #019e01;
+}
+
+body {
+    font-family: var(--font-family) !important;
+}
+
+.fa-eye {
+    position: absolute;
+    right: 2%;
+    bottom: 25%;
+}
+
+.fa-eye-slash {
+    position: absolute;
+    right: 2%;
+    bottom: 25%;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-default-outline:focus {
+    box-shadow: 0 0 0 3px rgba(61, 194, 79, 0.5) !important;
+}
+
+.cartItemsNum,
+.wishItemsNum {
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 23px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-radius: 50%;
+    background-color: #00a400;
+    padding: 4px 8px;
+}
+
+.bg-main:hover {
+    background-color: #008e00 !important;
+}
+
+.page-link {
+    color: var(--main-color) !important
+}
+
+nav .active {
+    color: white !important;
+    background-color: #009b00 !important;
+    border-radius: 6px;
+}
+
+.rating-color {
+    color: var(--rating-color);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+a,
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.product:hover {
+    box-shadow: 0 0 10px 0px rgb(84 84 84 / 64%);
+    border: 2px solid var(--main-color);
+}
+
+.product {
+    padding: 10px;
+    border: solid 2px transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.product button {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.product:hover button {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.product:hover .fa-heart,
+.product:hover .fa-heart-crack {
+    top: 2%;
+    opacity: 1;
+}
+
+.product .fa-heart,
+.product .fa-heart-crack {
+    position: absolute;
+    top: 6%;
+    right: 6%;
+    font-size: 40px;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    color: #008e00;
+}
+
+.font-sm {
+    font-size: 14px;
+}
+
+.text-main {
+    color: var(--main-color);
+}
+
+.bg-main {
+    background-color: var(--main-color) !important;
+}
+
+.formBtn {
+    background-color: var(--main-color);
+    color: #e7e7e7;
+}
+
+.formBtn:hover {
+    background-color: #009b00;
+    color: #e7e7e7;
+}
+
+.bg-main-light {
+    background-color: var(--light-color) !important;
+}
+
+form {
+    width: 100%;
+    background-color: whitesmoke;
+    margin-block: 30px;
+    padding: 0 30px 30px 30px;
+    box-shadow: 0 0 17px 3px rgb(159 159 159 / 43%);
+}
+
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 .25rem #0aad0a4b;
+}
+
+.personBorder {
+    border-radius: 50%;
+    border: 1px solid #0aad0a;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: -135%;
+}
+
+.dropdown-toggle {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    position: absolute !important;
+    top: 101%;
+    right: 38%;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #0aad0a !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: #0aad0a !important;
+    color: white;
+}
+
+.subCategoriesShadow {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    border-radius: 6px;
+}
+
+button {
+    background: transparent;
+}
+
+@media screen and (min-width: 980px) {
+    form {
+        width: 50%;
+    }
+}
